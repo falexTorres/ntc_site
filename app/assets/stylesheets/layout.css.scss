@@ -1,0 +1,32 @@
+$center-vertical: 9%;
+$title-color: #036;
+$tagline-color: #6b717f;
+$center-title: 30%;
+$center-tagline: 22.5%;
+$center-button: 45%;
+
+.splash-bg {
+    background-image: url('/tiny-town-5-original.png'); 
+		background: no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.pad-me {
+	padding-top: $center-vertical;
+}
+
+.center-me {
+	margin: 0 auto;
+}
+
+h1 {
+	color: $title-color;
+}
+
+h5 {
+	color: $tagline-color;
+}
+

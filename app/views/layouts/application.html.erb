@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SiimpleExample</title>
+  <title>NTC</title>
+	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="grid grid-fluid">
-  <%= yield %>
-</div>
+	<div class="container-fluid splash-bg">
+  	<%= yield %>
+	</div>
 
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
