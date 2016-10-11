@@ -1,0 +1,7 @@
+.splash-bg {
+		background: url('tiny-town-5-original.png') no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
