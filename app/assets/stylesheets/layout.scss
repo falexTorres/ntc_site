@@ -1,0 +1,176 @@
+$center-vertical: 2.5%;
+$center-vertical-mobile: 5%;
+$center-title: 30%;
+$center-tagline: 22.5%;
+$center-button: 45%;
+$paragraph-color: #09a0f6;
+$white: #eeeeee;
+$title-color: $white;
+$tagline-color: $white;
+$cool-blue: rgba(9, 154, 236, 1);
+
+div.btn-big {
+	background-color: $white;
+	color: #09a0f6;
+}
+
+@media (max-width: 420px) {
+	div.jumbotron.text-center {
+		height: 60rem;
+		margin-top: 12%;
+		background: $cool-blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, $cool-blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, $cool-blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, $cool-blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, $cool-blue); /* Standard syntax */
+	}
+
+	h1.top-header {
+		margin-top: 40%;
+		color: $white;
+	}
+}
+
+@media (min-width: 421px) {
+	div.jumbotron.text-center {
+		height: 40rem;
+		margin-top: 5%;
+		background: $cool-blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, $cool-blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, $cool-blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, $cool-blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, $cool-blue); /* Standard syntax */
+	}
+
+	h1.top-header {
+		margin-top: 7.5%;
+		color: $white;
+	}
+}
+
+html.splash-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 420px) {
+  .splash-icon {
+    margin-left: 92.5%;
+		color: $white;
+   }
+	
+	.pad-me {
+		margin-top: $center-vertical-mobile;
+	}
+}
+
+@media (min-width: 421px) {
+  .splash-icon {
+    margin-left: 82%;
+		color: $white;
+  }
+
+	.pad-me {
+		padding-top: $center-vertical;
+	}
+}
+
+.center-me {
+	margin: 0 auto;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  color: lighten($title-color, 30%);
+}
+
+h1.splash-h {
+	color: $title-color;
+	font-family: 'Open Sans';
+}
+
+h5.splash-h {
+	color: $tagline-color;
+}
+
+p.splash-p {
+	color: $paragraph-color;
+}
+
+@media (max-width: 420px) {
+	.alert {
+		margin-left: 5%;
+	}	
+
+	p.splash-p {
+		color: $paragraph-color;
+		margin-left: 10%;
+	}
+}
+
+@media (min-width: 421px) {
+	.alert {
+		margin-left: 1.5%;
+	}	
+
+	p.splash-p {
+		color: $paragraph-color;
+		margin-left: 38%;
+	}
+}
+
+p.hidden-xs {
+	color: $white;
+}
+
+h1.parallax-header {
+  position: relative;
+  top: 39%;
+  text-align: center;
+	color: $white;
+}
+
+h1.parallax-header Strong {
+	font-weight: 500;
+	font-size: 170%;
+}
+
+.dropdown {
+	margin-top: 0.5%;
+	margin-left: -2%;
+}
+
+.jumbo-btn.btn.btn-outline {
+	color: $white;
+	border-color: $white;
+}
+
+.jumbo-btn.btn.btn-outline:hover {
+	color: $cool-blue;
+	background-color: $white;
+}
+
+.jumbo-text {
+	color: $white;
+}
+
+.card-text {
+	color: $cool-blue;
+}
+
+.footer {
+  background-color: rgba(9, 154, 236, 1);
+	background: $cool-blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($cool-blue, black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($cool-blue, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($cool-blue, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($cool-blue, black); /* Standard syntax */
+  margin-top: 0%; 
+  color: white;
+}
+

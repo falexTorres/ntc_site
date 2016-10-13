@@ -11,23 +11,48 @@
 <div class="row pad-me"></div>
 <div class="row">
 	<div class="col-sm-12 text-center">
-		<h1><Strong>Consulting Agents Dedicated to Small Town Growth</Strong></h1>
+		<h1 class="splash-h">Learn how to start growing your business today</h1>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-12 text-center">
-		<h5><em>Learn how to start growing your small town business today.</em></h5>
+		<h5 class="splash-h"><em>with an agency dedicated to small town commerce.</em></h5>
 	</div>
 </div>
-<div class="row pad-me"></div>
+<div class="row" id="info" style="display: none">
+	<div class="col-sm-12 text-center">
+	<div class="alert alert-done">
+		<p class="splash-p">email: <Strong>ntcllc78624@gmail.com</Strong></p>
+		<p class="splash-p">phone: <Strong>(123)-456-7890</Strong></p>
+		<p class="splash-p">location: <Strong>Fredericksburg, TX</Strong></p>
+	</div>
+	</div>
+</div>
+<div class="row pad-me" id="padding"></div>
 <div class="row">
 	<div class="col-sm-12 text-center">
-		<div class="btn-outline">enter</div>
+		<div class="btn-big btn">enter</div>
 	</div>
 </div>
 
 <script>
-  $('.btn-outline').click(function() {
+  $('.btn-big').click(function() {
     window.location.assign('/index');
   })
+
+	$('.splash-icon').click(function() {
+		//$('#info').show();
+		$('.btn-outline').hide();
+		$('#info').animate({
+    	left: "+=50",
+    	height: "toggle"
+  	}, 2000, function() {
+			$('#padding').hide();
+			$('.btn-outline').show();
+  	});
+	})
+
+	$('p.hidden-xs.clickable').click(function() {
+		window.location.assign('/index');
+	})
 </script>

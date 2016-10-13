@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="splash-page">
+<html>
 <head>
   <title>NTC</title>
 	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/layout.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,49 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<nav class="navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">menu</i></span></a>
+				<ul class="dropdown-menu">
+					<li><a>Home</a></li>
+					<li><a>About</a></li>
+					<li><a>Contact</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
 	<div class="container-fluid">
   	<%= yield %>
 	</div>
+	<div class="footer">
+		<div class="row text-center">
+			<div class="col-xs-12 text-center">
+				<p class="footer-text">Powered by NTC, LLC.</p>
+				<i class="footer-icon material-icons clickable">settings_power</i>
+			</div>
+		</div>
+	<div>
 </body>
 </html>
+
+<style>
+
+	.clickable:hover {
+		cursor: pointer;
+		color: #16ef89;
+	}
+
+	.footer-icon {
+		margin-bottom: 7.5%;
+		margin-top: -5%;
+	}
+	
+	#footer-divider {
+		margin-bottom: 0%;	
+	}
+
+	.footer-text {
+		margin-top: 2.5%;
+	}
+</style>

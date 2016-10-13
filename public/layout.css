@@ -1,7 +1,22 @@
 .splash-bg {
-		background: url('tiny-town-5-original.png') no-repeat center center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
+		background: url('tiny-town-5-original.jpg') no-repeat fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
+
+.parallax-1 { 
+    /* The image used */
+    background-image: url(tiny-town-5-original.jpg);
+
+    /* Set a specific height */
+    height: 30rem; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
