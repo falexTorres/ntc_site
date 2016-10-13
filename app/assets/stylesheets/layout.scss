@@ -145,6 +145,19 @@ h1.parallax-header Strong {
 	margin-left: -2%;
 }
 
+@media (max-width: 900px) {
+	.dropdown {
+		margin-top: 0.5%;
+		margin-left: -2%;
+	}
+}
+
+@media (min-width: 901px) {
+	.dropdown {
+		margin-top: 0.5%;
+		margin-left: -6%;
+	}
+}
 .jumbo-btn.btn.btn-outline {
 	color: $white;
 	border-color: $white;

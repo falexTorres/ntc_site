@@ -3,9 +3,9 @@
   <h5 class="jumbo-text"><em>Promoting Small Town Business</em></h5>
 	<div class="btn-group" role="group" aria-label="">
 		<div class="row">
-			<button type="button" class="btn btn-outline jumbo-btn" id="servicesButton">Services</button>
-			<button type="button" class="btn btn-outline jumbo-btn" id="aboutButton">About</button>	
-			<button type="button" class="btn btn-outline jumbo-btn" id="contactButton">Contact</button>
+			<button type="button" class="servicesButton btn btn-outline jumbo-btn">Services</button>
+			<button type="button" class="aboutButton btn btn-outline jumbo-btn">About</button>	
+			<button type="button" class="contactButton btn btn-outline jumbo-btn">Contact</button>
 		</div>	
 	</div>
 </div>
@@ -94,15 +94,15 @@
 <hr id="footer-divider">
 
 <script>
-	$('#servicesButton').click(function() {
+	$('.servicesButton').click(function() {
 		window.location.assign("#services");	
 	})	
 
-	$('#aboutButton').click(function() {
+	$('.aboutButton').click(function() {
 		window.location.assign("#about");	
 	})	
 	
-	$('#contactButton').click(function() {
+	$('.contactButton').click(function() {
 		window.location.assign("#contact");	
 	})	
 </script>
