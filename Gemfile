@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 ruby "2.3.0"
 
 # Heroku dependencies
-gem 'pg', '>= 0.19.0'
+#gem 'pg', '>= 0.19.0'
+gem 'mysql2'
 gem 'rails_12factor'
 gem 'puma'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
