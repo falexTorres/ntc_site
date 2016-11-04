@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'front_end#home'
   get '/' => 'front_end#home'
   get '/index' => 'front_end#index'
   # The priority is based upon order of creation: first created -> highest priority.
