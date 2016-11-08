@@ -5,12 +5,8 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
-  database: yyzyyzyy
-  username: root
-  password: asdf:lkj1
-  host: 127.0.0.1
+  adapter: sqlite3
+  database: sqlite3
   port: 3306
 
 development:
