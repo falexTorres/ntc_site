@@ -6,7 +6,25 @@
     background-size: 100% 100%;
 }
 
-.parallax-1 { 
+@media(max-width: 420px) {
+	.parallax-1 {
+    /* The image used */
+		background-image: url(nightskycover.png);
+
+    /* Set a specific height */
+    height: 30rem; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+		
+	}
+}
+
+@media(min-width: 421px) {
+	.parallax-1 { 
     /* The image used */
     background-image: url(NightSkyCover.jpg);
 
@@ -18,5 +36,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	}
 }
 
