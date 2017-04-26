@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
-ruby "2.3.1"
+ruby "2.2.1"
 
 # Heroku dependencies
 #gem 'pg', '>= 0.19.0'
 gem 'rails_12factor'
-gem 'puma'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.2'
+gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -41,6 +40,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'puma'
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -48,7 +48,8 @@ group :development do
 end
 
 group :production do
-	#gem 'unicorn'
+	gem 'unicorn'
 	#gem 'mysql2'
+	gem 'rack-cache'
 end
 
